@@ -1,7 +1,7 @@
-import module
+package main
 
-main()
-{test}
- kdmd $:$;&8hdndn  mdmdjjidnd
- jxjsiikxkx
- jdkkd
+import "fmt"
+
+func main() {
+	fmt.Printf("hello, world\n")
+}
