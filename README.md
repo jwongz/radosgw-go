@@ -22,9 +22,11 @@ This creates a new container called my-new-container:
 ```
 container_name = 'my-new-container'
 conn.put_container(container_name)
-CREATE AN OBJECT
-This creates a file hello.txt from the file named my_hello.txt:
+```
 
+### CREATE AN OBJECT
+This creates a file hello.txt from the file named my_hello.txt:
+```
 with open('hello.txt', 'r') as hello_file:
         conn.put_object(container_name, 'hello.txt',
                                         contents= hello_file.read(),
