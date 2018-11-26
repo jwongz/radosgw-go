@@ -67,7 +67,10 @@ with open('my_hello.txt', 'w') as my_hello:
 This deletes the object hello.txt:
 ```
 conn.delete_object(container_name, 'hello.txt')
-DELETE A CONTAINER
+```
+
+#### DELETE A CONTAINER
 Note The container must be empty! Otherwise the request won’t work!
+```
 conn.delete_container(container_name)
 ```
