@@ -4,9 +4,11 @@
 package radosgw
 
 type Connection struct {
-	user string
-	key string
-	url string
+	token string
+}
+
+func New(user string, key string, url string) (*Connection) {
+
 }
 
 func (con *Connection) create_container(container string) {
