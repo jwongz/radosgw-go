@@ -28,6 +28,7 @@ func (conn *Connection) Create_container(container string) {
 	url := conn.url + "/" + container
 	b := httplib.Put(url)
 	b.Header("X-Auth-Token", conn.token)
+
 	b.DoRequest()
 }
 
