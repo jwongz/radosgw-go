@@ -47,11 +47,8 @@ func (conn *Connection) Delete_container(container string) {
 
 }
 
-func (conn *Connection) Create_object(object string) {
-
-}
-
-func (conn *Connection) Put_object(object []byte) {
+// Create or update an object
+func (conn *Connection) Put_object(container string, object string, object []byte) {
 
 }
 
